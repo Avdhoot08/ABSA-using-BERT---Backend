@@ -1,0 +1,105 @@
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/core/lib/scss/variables";
+
+:root {
+    font-size: 10px;
+}
+
+
+// .card {
+    
+// }
+
+main {
+    height: 100%;
+    display: flex;
+    font-size: 1.6rem;
+}
+
+
+#board {
+    padding: 1.5em;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#sidebar {
+    min-width: 40%;
+    max-width: 40%;
+    height: 100%;
+    background-color: $light-gray3;
+    overflow: auto;
+}
+
+#sidebar > .file-picker-actions {
+    padding: 1em 1.5em;
+    position: sticky;
+    top: 0;
+    background-color: $light-gray3;
+    z-index: 10;
+    display: flex;
+}
+
+.file-picker-actions .submit-reviews {
+    margin-left: auto;
+}
+
+#sidebar > .entries {
+    margin: 1.5em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#sidebar .card {
+    font-size: 1.2rem;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.review-input {
+    margin-bottom: 1em;
+}
+
+.evaluation {
+    margin-top: 2em;
+}
+
+.aspects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.aspect {
+    display: flex;
+    column-gap: 20px;
+    font-weight: 500;
+}
+
+.sentiment {
+    display: flex;
+    column-gap: 5px;
+}
+
+
+.review {
+    display: inline-block;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+.review--neg {
+    background-color: rgb(255, 151, 151);
+}
+
+
+.evaluated-reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
